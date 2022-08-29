@@ -1,0 +1,21 @@
+/*----------mini-reset----------*/
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  ul{
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #000000;
+  }
+
+  body {
+    max-width: 1500px;
+    margin: 0 auto;
+}
