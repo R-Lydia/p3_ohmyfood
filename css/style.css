@@ -27,8 +27,8 @@ body {
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   margin-top: 15px;
   margin-bottom: 50px;
-  box-shadow: 0px 4px 4px 2px #d4d3d3;
   cursor: pointer;
+  box-shadow: 0px 4px 4px 2px #d4d3d3;
 }
 
 header {
@@ -38,7 +38,7 @@ header {
 /*.header_logo{
     padding-top: 5px;
     padding-bottom: 5px;
-    box-shadow: 0px 1px 5px #d4d3d3;
+    box-shadow: 0px 1px 5px $color-ombre;
 }*/
 header img {
   width: 45%;
@@ -81,6 +81,45 @@ header img {
   font-weight: 300;
   font-size: 110%;
   color: rgb(77, 76, 76);
+}
+
+.fonction_titre {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.fonction_container {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  /*width: 85%;*/
+  height: 70px;
+  margin: 10px 20px 30px 30px;
+  /*padding-top: 15px;
+  padding-bottom: 10px;*/
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 2px #d4d3d3;
+}
+
+.fonction_container span {
+  background-color: #9356dc;
+  color: #ffffff;
+  font-size: 90%;
+  padding: 3px 7px;
+  border-radius: 15px;
+  margin-left: -10px;
+}
+
+.fonction_container i {
+  color: rgb(77, 76, 76);
+  font-size: 120%;
+  padding-left: 20px;
+}
+
+.fonction_container p {
+  font-weight: 500;
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
