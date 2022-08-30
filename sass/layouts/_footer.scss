@@ -1,0 +1,37 @@
+.basdepage {
+    background-color: rgb(77, 76, 76);
+    color: $color-white;
+ 
+}
+
+.basdepage h3 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: 200;
+    margin-top: 0;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.basdepage__liste{
+    margin-left: 20px;
+    font-size: 95%;
+    padding-bottom: 30px;
+}
+
+.basdepage__liste li{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
+.basdepage__liste .fa-solid.fa-utensils{
+    font-size: 90%;
+    padding-right: 12px;
+    display: block;
+}
+
+.basdepage__liste .fa-solid.fa-handshake-angle {
+    font-size: 74%;
+    padding-right: 10px;
+    display: block;
+}
