@@ -1,14 +1,14 @@
 .formulaire{
     background-color: #eaeaea;
-    color: #353535;
     text-align: center;
     box-shadow: inset 0px 3px 1px $color-ombre;
     
-    .formulaire_localisation{
+    &__localisation{
         margin: 0;
         padding: 4%;
     }
-    .formulaire_search{
+    
+    &__search{
         background-color: #eaeaea;
         width: 170px;
         border: none; 

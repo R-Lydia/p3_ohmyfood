@@ -49,15 +49,14 @@ header img {
 
 .formulaire {
   background-color: #eaeaea;
-  color: #353535;
   text-align: center;
   box-shadow: inset 0px 3px 1px #d4d3d3;
 }
-.formulaire .formulaire_localisation {
+.formulaire__localisation {
   margin: 0;
   padding: 4%;
 }
-.formulaire .formulaire_search {
+.formulaire__search {
   background-color: #eaeaea;
   width: 170px;
   border: none;
@@ -71,11 +70,11 @@ header img {
   background-color: #f2f2f2;
   text-align: center;
 }
-.presentation .presentation_titre {
+.presentation__titre {
   margin-top: 0;
   padding: 35px 50px 0px 50px;
 }
-.presentation .presentation_texte {
+.presentation__texte {
   padding-left: 25px;
   padding-right: 25px;
   font-weight: 300;
@@ -83,26 +82,25 @@ header img {
   color: rgb(77, 76, 76);
 }
 
-.fonction_titre {
+.fonction__titre {
   margin-top: 50px;
   margin-bottom: 30px;
   margin-left: 20px;
 }
-
-.fonction_container {
+.fonction__contenu {
   display: flex;
   align-items: center;
   background-color: #f2f2f2;
-  /*width: 85%;*/
   height: 70px;
   margin: 10px 20px 30px 30px;
-  /*padding-top: 15px;
-  padding-bottom: 10px;*/
   border-radius: 20px;
   box-shadow: 0px 4px 4px 2px #d4d3d3;
 }
+.fonction__contenu:hover {
+  background-color: #f2eafb;
+}
 
-.fonction_container span {
+.fonction__contenu span {
   background-color: #9356dc;
   color: #ffffff;
   font-size: 90%;
@@ -111,13 +109,13 @@ header img {
   margin-left: -10px;
 }
 
-.fonction_container i {
-  color: rgb(77, 76, 76);
-  font-size: 120%;
+.fonction__contenu i {
+  color: #737272;
+  font-size: 110%;
   padding-left: 20px;
 }
 
-.fonction_container p {
+.fonction__contenu p {
   font-weight: 500;
   padding-left: 20px;
 }

@@ -1,15 +1,58 @@
 .presentation{
     background-color: #f2f2f2;
     text-align: center;
-    .presentation_titre{
+    &__titre{
         margin-top: 0;
         padding: 35px 50px 0px 50px;
     }
-    .presentation_texte{
+    &__texte{
         padding-left: 25px;
         padding-right: 25px;
         font-weight: 300;
         font-size: 110%;
         color:rgb(77, 76, 76);
     }
+}
+
+.fonction {
+    &__titre {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+
+    &__contenu {
+        display: flex;
+        align-items: center;
+        background-color: #f2f2f2;
+        height: 70px;
+        margin: 10px 20px 30px 30px;
+        border-radius: 20px;
+        &:hover{
+            background-color: $color-lightprimary;
+        }
+            @include bloc-shadow;
+
+    }
+}
+
+.fonction__contenu span{
+    background-color: $color-primary;
+    color: $color-white;
+    font-size: 90%;
+    padding: 3px 7px;
+    border-radius: 15px;
+    margin-left: -10px;
+}
+
+.fonction__contenu i{
+    color: #737272;
+    font-size: 110%;
+    padding-left: 20px;
+   
+}
+
+.fonction__contenu p{
+    font-weight: 500;
+    padding-left: 20px;
 }
