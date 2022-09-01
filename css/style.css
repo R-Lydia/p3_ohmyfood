@@ -33,7 +33,7 @@ body {
 }
 
 header {
-  height: 65px;
+  min-height: 65px;
 }
 
 /*.header_logo{
@@ -68,7 +68,7 @@ header img {
 }
 
 .basdepage__liste li {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .basdepage__liste li a {
