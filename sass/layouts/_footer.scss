@@ -25,6 +25,10 @@
     color: $color-white;
 }
 
+.basdepage__liste li a:hover{
+    color: $color-primary;
+}
+
 .basdepage__liste .fa-solid.fa-utensils {
     font-size: 90%;
     padding-right: 12px;
