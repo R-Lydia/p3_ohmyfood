@@ -37,22 +37,63 @@
     
 }
 
-.menu__conteneur h3 {
+.menu__conteneur{
+    /*display: flex;*/
+}
+
+.card__titre {
     font-size: 100%;
     font-weight: 300;
     text-transform: uppercase;
-    padding-left: 15px;;
+    padding-left: 15px;
+    /*padding-bottom: 5px;
+    border-bottom: 3px solid $color-tertiary;*/
 }
 
 .menu__card {
     background-color: $color-white;
     border-radius: 15px;;
-    width: 93%;
+    width: 94%;
     height: 70px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    cursor:pointer;
         @include bloc-shadow;
+
+        &:hover > .menu__check{
+            &--animation{
+                background-color: $color-tertiary;
+                width: 80px;
+                transform: translate(1px);
+                transition: all 400ms ease-in-out;
+            } 
+
+            &--animation i{
+                color: $color-white;
+                font-size: 150%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                transition: transform 300ms ease-in-out;
+                transform: rotate(360deg);
+                width: 100%;              
+            }
+        }
 }
 
+.menu {
+    &__check {
+        width: 0px;
+        transform: translate(0px);
+    }
+    &__check i{
+        width: 0%;
+        transform: rotate(0);
+    }
+}
 
 .menu__card h4 {
     font-size: 110%;
@@ -63,10 +104,15 @@
     margin-bottom: 5px;
 }
 
-.menu__element{
+.menu__texte{
+    width: 100%;
+}
+
+.menu__element {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    text-overflow: ellipsis;
 
 }
 
@@ -80,21 +126,5 @@
 .menu__element span{
     font-size: 95%;
     font-weight: 500;
-    margin-right: 30px;
-}
-
-.menu__check{
-    width: 17%;
-    height: 70px;
-    background-color: $color-tertiary;
-    border-radius: 0 15px 15px 0;
-}
-
-.menu__check i{
-    color: $color-white;
-    font-size: 150%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    margin-right: 20px;
 }
