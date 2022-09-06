@@ -148,12 +148,12 @@ header i {
   margin: 10px 20px 30px 30px;
   border-radius: 20px;
   box-shadow: 0px 5px 10px #d4d3d3;
-  /*&:hover > .fonction__contenu i {
-      color: $color-secondary;
-  }*/
 }
 .fonction__contenu:hover {
   background-color: #f2eafb;
+}
+.fonction__contenu:hover i {
+  color: #9356dc;
 }
 
 .fonction__contenu span {

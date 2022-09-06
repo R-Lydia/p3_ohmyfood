@@ -35,10 +35,10 @@
 
             &:hover {
                 background-color: $color-lightprimary;
+                    & i {
+                        color: $color-primary;
+                    }
             }
-            /*&:hover > .fonction__contenu i {
-                color: $color-secondary;
-            }*/
     }
 }
 
