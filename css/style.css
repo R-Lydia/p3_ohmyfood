@@ -148,6 +148,9 @@ header i {
   margin: 10px 20px 30px 30px;
   border-radius: 20px;
   box-shadow: 0px 5px 10px #d4d3d3;
+  /*&:hover > .fonction__contenu i {
+      color: $color-secondary;
+  }*/
 }
 .fonction__contenu:hover {
   background-color: #f2eafb;
@@ -344,10 +347,7 @@ i::before {
   font-size: 175%;
   font-weight: 300;
   padding-left: 20px;
-}
-
-.menu__conteneur {
-  /*display: flex;*/
+  margin-bottom: 10px;
 }
 
 .card__titre {
@@ -355,8 +355,7 @@ i::before {
   font-weight: 300;
   text-transform: uppercase;
   padding-left: 15px;
-  /*padding-bottom: 5px;
-  border-bottom: 3px solid $color-tertiary;*/
+  margin-top: 30px;
 }
 
 .menu__card {
@@ -365,32 +364,33 @@ i::before {
   width: 94%;
   height: 70px;
   margin: 0 auto;
+  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0px 5px 10px #d4d3d3;
 }
-.menu__card:hover > .menu__check--animation {
+.menu__card:active > .menu__check--animation {
   background-color: #99e2d0;
-  width: 80px;
+  width: 20%;
   transform: translate(1px);
   transition: all 400ms ease-in-out;
 }
-.menu__card:hover > .menu__check--animation i {
+.menu__card:active > .menu__check--animation i {
   color: #ffffff;
   font-size: 150%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  transition: transform 300ms ease-in-out;
-  transform: rotate(360deg);
   width: 100%;
+  height: 100%;
+  transition: transform 400ms ease-in-out;
+  transform: rotate(360deg);
 }
 
 .menu__check {
-  width: 0px;
+  width: 0%;
   transform: translate(0px);
 }
 .menu__check i {
@@ -408,14 +408,13 @@ i::before {
 }
 
 .menu__texte {
-  width: 100%;
+  width: 90%;
 }
 
 .menu__element {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  text-overflow: ellipsis;
 }
 
 .menu__element p {
@@ -423,12 +422,14 @@ i::before {
   font-weight: 300;
   margin-top: 0px;
   margin-left: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu__element span {
   font-size: 95%;
   font-weight: 500;
-  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
