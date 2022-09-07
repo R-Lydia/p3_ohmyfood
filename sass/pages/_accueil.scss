@@ -138,15 +138,14 @@
     font-size: 150%;
     margin-right: 30px;
     margin-top: 15px;
-       /* &:hover {
-            display: inline-block;
-            color: linear-gradient(to bottom right, $color-secondary, $color-primary);
-            font-weight: 900;
-        }*/
+        &:hover {
+            background: linear-gradient(to top, $color-secondary, $color-primary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
 }
 
 /*i::before {
     content: "";
-    display: block;
-    background-color: linear-gradient(to bottom right, $color-secondary, $color-primary);
 }    */
