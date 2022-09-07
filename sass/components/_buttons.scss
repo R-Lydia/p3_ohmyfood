@@ -1,16 +1,21 @@
-.btn {
-    cursor: pointer;
-    border: none;
-    border-radius: 30px;
-    padding: 15px 20px;
-    color: $color-white;
+.btn{
     background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-    margin-top: 15px;
+    color: $color-white;
+    display: inline-block;
+    width: 220px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 30px;
+    margin-top: 30px;
     margin-bottom: 50px;
         @include bloc-shadow;
 
         &:hover {
             background: linear-gradient(to bottom right, $color-lightsecondary, $color-lightprimary20);
                 @include darkbloc-shadow;
-        }        
+        }    
+}
+
+.commande{
+    text-align: center;
 }

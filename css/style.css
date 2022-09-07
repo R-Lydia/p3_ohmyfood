@@ -21,19 +21,24 @@ body {
 }
 
 .btn {
-  cursor: pointer;
-  border: none;
-  border-radius: 30px;
-  padding: 15px 20px;
-  color: #ffffff;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  margin-top: 15px;
+  color: #ffffff;
+  display: inline-block;
+  width: 220px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 30px;
+  margin-top: 30px;
   margin-bottom: 50px;
   box-shadow: 0px 5px 10px #d4d3d3;
 }
 .btn:hover {
   background: linear-gradient(to bottom right, #ff93e1, #c9abee);
   box-shadow: 0px 5px 10px #737272;
+}
+
+.commande {
+  text-align: center;
 }
 
 header {
@@ -130,6 +135,7 @@ header i {
   padding-right: 25px;
   font-weight: 300;
   font-size: 110%;
+  margin-bottom: 5px;
   color: rgb(77, 76, 76);
 }
 
