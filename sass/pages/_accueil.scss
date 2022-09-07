@@ -6,6 +6,7 @@
         margin-top: 0;
         padding: 35px 50px 0px 50px;
     }
+
     &__texte{
         padding-left: 25px;
         padding-right: 25px;
@@ -42,7 +43,7 @@
     }
 }
 
-.fonction__contenu span{
+.fonction__contenu span {
     background-color: $color-primary;
     color: $color-white;
     font-size: 90%;
@@ -51,14 +52,14 @@
     margin-left: -10px;
 }
 
-.fonction__contenu i{
+.fonction__contenu i {
     color: #737272;
     font-size: 110%;
     padding-left: 20px;
    
 }
 
-.fonction__contenu p{
+.fonction__contenu p {
     font-weight: 500;
     padding-left: 20px;
 }
@@ -211,8 +212,8 @@
         }*/
 }
 
-i::before {
+/*i::before {
     content: "";
     display: block;
     background-color: linear-gradient(to bottom right, $color-secondary, $color-primary);
-}    
+}    */

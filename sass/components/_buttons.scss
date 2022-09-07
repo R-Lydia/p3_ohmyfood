@@ -7,5 +7,10 @@
     background: linear-gradient(to bottom right, $color-secondary, $color-primary);
     margin-top: 15px;
     margin-bottom: 50px;
-        @include bloc-shadow;        
+        @include bloc-shadow;
+
+        &:hover {
+            background: linear-gradient(to bottom right, $color-lightsecondary, $color-lightprimary20);
+                @include darkbloc-shadow;
+        }        
 }
