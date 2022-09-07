@@ -65,76 +65,8 @@
 }
 
 
-//partie restaurants
-/*
-.restaurants {
-    background-color: #f2f2f2;
-    padding-bottom: 50px;
-    &__titre{
-        margin-top: 70px;
-        margin-bottom: 5px;
-        margin-left: 20px;
-        padding-top : 50px;
-    }
 
-    &__article {
-    width: 90%;
-    height: 260px;
-    margin: 0 auto;
-    background-color: $color-white;
-    border-radius: 15px;
-    margin-top: 20px;
-        @include bloc-shadow;
-    }
-}
-
-.restaurants__image img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-}
-
-.restaurants__image span {
-    background-color: $color-tertiary;
-    color: $color-dark-tertiary;
-    padding: 5px 10px;
-    font-size: 90%;
-    font-weight: 500;
-    border-radius: 2px;
-    position: absolute;
-    bottom: 15px;
-    left: 265px;
-}
-
-.restaurants__contenu{
-    display: flex;
-    justify-content: space-between;
-}
-
-.restaurants__texte{
-    margin-left: 12px;
-}
-
-.restaurants__contenu h3 {
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-
-.restaurants__contenu p{
-    margin-top: 5px;
-    font-weight: 300;
-    font-size: 105%;
-    
-}
-
-.restaurants__picto i{
-    font-size: 150%;
-    margin-right: 30px;
-    margin-top: 15px;
-} */
-
-.restaurants {
+.restaurant {
     background-color: #f2f2f2;
     padding-bottom: 50px;
     &__titre{
@@ -157,7 +89,7 @@
 }
 
 
-.restaurants__image img {
+.restaurant__image img {
     width: 100%;
     height: 180px;
     object-fit: cover;
@@ -180,28 +112,28 @@
     right: 10px;
 }
 
-.restaurants__contenu{
+.restaurant__contenu{
     display: flex;
     justify-content: space-between;
 }
 
-.restaurants__texte {
+.restaurant__texte {
     margin-left: 12px;
 }
 
-.restaurants__contenu h3 {
+.restaurant__contenu h3 {
    margin-top: 12px;
    margin-bottom: 0;
 }
 
-.restaurants__contenu p{
+.restaurant__contenu p{
     margin-top: 5px;
     font-weight: 300;
     font-size: 105%;
     
 }
 
-.restaurants__picto i{
+.restaurant__picto i{
     font-size: 150%;
     margin-right: 30px;
     margin-top: 15px;
