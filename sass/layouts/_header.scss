@@ -1,20 +1,24 @@
-header{
+header {
     min-height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.header__fleche{
+.header__fleche {
     position: absolute;
 }
 
-header img{
+header img {
     max-width: 45%;
 }
 
-header i{
+header i {
     font-size: 120%;
     position: relative;
     right: 150px;
+
+    &:hover {
+        color: $color-primary;
+    }
 }

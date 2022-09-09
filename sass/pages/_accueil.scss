@@ -1,5 +1,5 @@
 //partie présentation
-.presentation{
+.presentation {
     background-color: #f2f2f2;
     text-align: center;
     &__titre{
@@ -113,9 +113,10 @@
     right: 10px;
 }
 
-.restaurant__contenu{
+.restaurant__contenu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .restaurant__texte {
@@ -127,25 +128,40 @@
    margin-bottom: 0;
 }
 
-.restaurant__contenu p{
+.restaurant__contenu p {
     margin-top: 5px;
     font-weight: 300;
-    font-size: 105%;
-    
+    font-size: 105%; 
 }
 
-.restaurant__picto i{
-    font-size: 150%;
-    margin-right: 30px;
-    margin-top: 15px;
+.restaurant__picto i {
+    font-size: 150%;     
+    margin-right: 40px; 
+}
+
+.restaurant__picto .fa-regular.fa-heart {
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+
         &:hover {
-            background: linear-gradient(to top, $color-secondary, $color-primary);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
+            opacity: 0;
+            transition: all 400ms ease-in-out;
+
+            + .fa-solid.fa-heart {
+                height: 24px;
+                width: 100%;
+                transition: all 500ms ease-in-out;
+            }
         }
 }
 
-/*i::before {
-    content: "";
-}    */
+.restaurant__picto .fa-solid.fa-heart {
+    position: relative;
+    background: linear-gradient(to top, $color-secondary, $color-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    height: 0px;
+    width: 0%;
+}
