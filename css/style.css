@@ -383,6 +383,7 @@ header i:hover {
 }
 .menu__card:active > .menu__texte {
   width: 82%;
+  transition: all 300ms ease-in-out;
 }
 .menu__card:active .menu__element p {
   white-space: nowrap;
@@ -452,6 +453,52 @@ header i:hover {
   font-weight: 500;
   padding-left: 5px;
   padding-right: 15px;
+}
+
+.loader {
+  position: fixed;
+  background-color: white;
+  opacity: 0.97;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  animation: load 0.2s 3s ease-in-out forwards;
+}
+
+@keyframes load {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.loader p {
+  position: absolute;
+  font-family: "Shrikhand", cursive;
+}
+
+.loader__spinner {
+  border: 12px dotted #f2f2f2;
+  border-top: 13px dotted #9356dc;
+  border-right: 14px dotted #ff79da;
+  border-bottom: 15px dotted #99e2d0;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  animation: spin 3000ms ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
