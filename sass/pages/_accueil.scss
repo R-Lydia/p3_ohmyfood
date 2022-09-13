@@ -1,13 +1,13 @@
-//partie présentation
+// Section Présentation
 .presentation {
     background-color: #f2f2f2;
     text-align: center;
-    &__titre{
+    &__titre {
         margin-top: 0;
         padding: 35px 50px 0px 50px;
     }
 
-    &__texte{
+    &__texte {
         padding-left: 25px;
         padding-right: 25px;
         font-weight: 300;
@@ -18,7 +18,7 @@
 }
 
 
-//partie fonctionnement
+// Section Fonctionnement
 .fonction {
     &__titre {
         margin-top: 50px;
@@ -33,8 +33,13 @@
         height: 70px;
         margin: 10px 20px 30px 30px;
         border-radius: 20px;
-            @include bloc-shadow;
-
+        @include bloc-shadow;
+        @include tablette {
+            width: 30%; 
+        }
+        @include desktop {
+            width: 30%;
+        }
             &:hover {
                 background-color: $color-lightprimary;
                     & i {
@@ -42,6 +47,18 @@
                     }
             }
     }
+}
+
+.fonction__container {
+    @include tablette {
+        display: flex;
+        justify-content: space-around;
+    }
+    @include desktop {
+        display: flex;
+        justify-content: space-around;
+    }
+
 }
 
 .fonction__contenu span {
@@ -56,8 +73,7 @@
 .fonction__contenu i {
     color: #737272;
     font-size: 110%;
-    padding-left: 20px;
-   
+    padding-left: 20px;   
 }
 
 .fonction__contenu p {
@@ -66,7 +82,7 @@
 }
 
 
-//partie restaurants
+// Section Restaurants
 .restaurant {
     background-color: #f2f2f2;
     padding-bottom: 50px;
@@ -78,17 +94,36 @@
     }
 
     &__article {
-    width: 90%;
-    height: 260px;
-    margin: 0 auto; 
-    background-color: $color-white;
-    border-radius: 15px;
-    margin-top: 20px;
-    position: relative;
+        width: 90%;
+        height: 260px;
+        margin: 0 auto; 
+        background-color: $color-white;
+        border-radius: 15px;
+        margin-top: 20px;
+        position: relative;
         @include bloc-shadow;
     }
 }
 
+.restaurant__container {
+    @include tablette {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    > a {
+        @include tablette {
+            width: 50%;
+        }
+        @include desktop {
+            width: 50%;
+        }
+    }
+}
 
 .restaurant__image img {
     width: 100%;

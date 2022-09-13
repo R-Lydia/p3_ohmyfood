@@ -1,14 +1,14 @@
-.formulaire{
+.formulaire {
     background-color: #eaeaea;
     text-align: center;
     box-shadow: inset 0px 3px 1px $color-ombre;
 
-    &__localisation{
+    &__localisation {
         margin: 0;
-        padding: 4%;
+        padding: 15px;
     }
 
-    &__search{
+    &__search {
         background-color: #eaeaea;
         width: 170px;
         border: none; 
@@ -16,5 +16,12 @@
         font-weight: 500;
         color: rgb(77, 76, 76);
         padding-left: 20px;
+        @include tablette {
+            font-size: 110%;
+        }
+
+        @include desktop {
+            font-size: 110%;
+        }
     }
 }

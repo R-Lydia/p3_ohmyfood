@@ -57,19 +57,20 @@
         }
 }
 
+//animation arrivée des cards repas
 .menu__conteneur article {
     opacity: 0;
 
         &:nth-child(1) {
-            animation: arrival-cards 0.5s 0.2s ease-in-out forwards;
+            animation: arrival-cards 1s 0.2s ease-in-out forwards;
         }
 
         &:nth-child(2) {
-            animation: arrival-cards 0.5s 0.4s ease-in-out forwards;
+            animation: arrival-cards 1s 0.4s ease-in-out forwards;
         }
 
        &:nth-child(3){
-            animation: arrival-cards 0.5s 0.6s ease-in-out forwards;
+            animation: arrival-cards 1s 0.6s ease-in-out forwards;
         }
 }
 
