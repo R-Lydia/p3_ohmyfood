@@ -2,6 +2,7 @@
 @import "./utils/mixins";
 @import "./base/base";
 @import "./components/buttons";
+@import "./layouts/loader";
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./layouts/form";
@@ -176,55 +177,4 @@
     font-weight: 500;
     padding-left: 5px;
     padding-right: 15px;
-}
-
-
-
-
-//loader
-.loader {
-    position: fixed;
-    background-color: white;
-    opacity: 0.97;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    animation: load 0.2s 3s ease-in-out forwards; 
-}
-
-@keyframes load {
-    0% { 
-        transform: scale(1);
-    }
-    100% {
-         transform: scale(0); 
-    }
-}
-
-.loader p {
-   position: absolute;
-   font-family: 'Shrikhand', cursive; 
-}
-  
-.loader__spinner {
-    border: 12px dotted #f2f2f2; 
-    border-top: 13px dotted $color-primary; 
-    border-right: 14px dotted $color-secondary; 
-    border-bottom: 15px dotted $color-tertiary;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    animation: spin 3000ms ease-in-out infinite;
-}
-  
-@keyframes spin {
-    0% { 
-        transform: rotate(0deg);
-    }
-    100% {
-         transform: rotate(360deg); 
-    }
 }

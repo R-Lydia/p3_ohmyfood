@@ -1,7 +1,22 @@
-@mixin bloc-shadow{
+//mixins pour ombre des blocs
+@mixin bloc-shadow {
     box-shadow: 0px 5px 10px $color-ombre;
 }
 
-@mixin darkbloc-shadow{
+@mixin darkbloc-shadow {
     box-shadow: 0px 5px 10px $color-dark-ombre;
+}
+
+
+//mixins pour responsive
+@mixin tablette {
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 993px){
+        @content;
+    }
 }
