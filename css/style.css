@@ -91,20 +91,18 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 header img {
   max-width: 45%;
 }
 
-.head__fleche {
-  position: absolute;
-}
-
 header i {
-  font-size: 120%;
-  position: relative;
-  right: 150px;
+  font-size: 130%;
+  position: absolute;
+  left: 30px;
+  bottom: 22px;
 }
 header i:hover {
   color: #9356dc;
@@ -205,6 +203,11 @@ header i:hover {
   margin-bottom: 30px;
   margin-left: 20px;
 }
+@media screen and (min-width: 993px) {
+  .fonction__titre {
+    margin-left: 2.5%;
+  }
+}
 .fonction__contenu {
   display: flex;
   align-items: center;
@@ -273,6 +276,11 @@ header i:hover {
   margin-bottom: 5px;
   margin-left: 20px;
   padding-top: 50px;
+}
+@media screen and (min-width: 993px) {
+  .restaurant__titre {
+    margin-left: 2.5%;
+  }
 }
 .restaurant__article {
   width: 90%;
@@ -407,15 +415,27 @@ header i:hover {
   font-family: "Shrikhand", cursive;
   font-size: 175%;
   font-weight: 300;
-  padding-left: 20px;
+  margin-left: 4%;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 993px) {
+  .repas {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 993px) {
+  .repas > .repas__contenu {
+    width: 32%;
+  }
 }
 
 .card__titre {
   font-size: 100%;
   font-weight: 300;
   text-transform: uppercase;
-  padding-left: 15px;
+  margin-left: 4%;
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -526,9 +546,9 @@ header i:hover {
   font-weight: 300;
   margin-top: 0px;
   margin-left: 12px;
-  /*white-space: nowrap;
+  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;*/
+  text-overflow: ellipsis;
 }
 
 .menu__element span {
