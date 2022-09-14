@@ -460,6 +460,9 @@ header i:hover {
 .menu__conteneur article:nth-child(3) {
   animation: arrival-cards 1s 0.6s ease-in-out forwards;
 }
+.menu__conteneur article:nth-child(4) {
+  animation: arrival-cards 1s 0.8s ease-in-out forwards;
+}
 
 @keyframes arrival-cards {
   0% {

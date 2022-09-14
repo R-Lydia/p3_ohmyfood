@@ -82,8 +82,11 @@
             animation: arrival-cards 1s 0.4s ease-in-out forwards;
         }
 
-       &:nth-child(3){
+        &:nth-child(3){
             animation: arrival-cards 1s 0.6s ease-in-out forwards;
+        }
+        &:nth-child(4){
+            animation: arrival-cards 1s 0.8s ease-in-out forwards;
         }
 }
 
